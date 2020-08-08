@@ -32,41 +32,41 @@ public class Programa {
 		Alumnos a5 = new Alumnos();
 		a5.nombre = "Toño";
 		
-		//Crear objetos Materias
+		//Crear objetos Materias Alumnos
 		Materias ma1 = new Materias();
 		ma1.nombre = "Programación";
 		ma1.notas = 1;
 		ma1.numCreditos = 2;
+		ma1.valCreditos = 2000;
 		
 		Materias ma2 = new Materias();
 		ma2.nombre = "Ingles";
 		ma2.notas = 2;
 		ma2.numCreditos = 3;
+		ma2.valCreditos = 3000;
 		
 		Materias ma3 = new Materias();
 		ma3.nombre = "Matematicas";
 		ma3.notas = 4;
-		ma3.numCreditos = 4;
+		ma3.numCreditos = 1;
+		ma3.valCreditos = 4000;
 		
 		//Relaciones entre objetos
 		a1.m1 = ma1;
 		a1.m2 = ma2;
 		a1.m3 = ma3;
-		a2.m1 = ma1;
-		a2.m2 = ma2;
-		a2.m3 = ma3;
 		
-		
-		float promedioA1 = a1.calPromedio();
-		System.out.println("El promedio del estudiante es: " + promedioA1);
 		
 		System.out.println("Alumno: " + a1.nombre);
-		int matperdidasa1 = a1.calNotPerdida();
-		int matganadasa1 = a1.calNotGanada();
+		float promedioA1 = a1.calPromedio();
+		System.out.println("El promedio del estudiante " + promedioA1);
 		
-		System.out.println("Alumno: " + a2.nombre);
-		int matperdidasa2 = a2.calNotPerdida();
-		int matganadasa2 = a2.calNotGanada();
+		int matperdidasa1 = a1.calNotPerdida1();
+		int matganadasa1 = a1.calNotGanada1();
+		
+		float dineroA1 = a1.calPerCredito();
+		System.out.println("Para repetir los creditos debe pagar: " + dineroA1);
+		
 			
 		
 	}
