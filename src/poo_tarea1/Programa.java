@@ -4,8 +4,8 @@ package poo_tarea1;
  * Realizar un programa que realice unos calculos con las notas de unas
  * asignaturas pertenecientes a un estudiante. Cálculos:
  * 1. Promedio del semestre: OK
- * 2. Cuántas notas/asignaturas perdió.
- * 3. Cuántas asignaturas ganó
+ * 2. Cuántas notas/asignaturas perdió OK
+ * 3. Cuántas asignaturas ganó OK
  * 4. Cada asignatura tiene un número de créditos, se debe indicar cuántos créditos
  * perdió y cuánto dinero debe pagar para repetir los créditos/asignatura. * 
  * 5. Crear al menos 5 estudiantes con diferentes valores
@@ -20,10 +20,22 @@ public class Programa {
 		Alumnos a1 = new Alumnos();
 		a1.nombre = "Lucia";
 		
+		Alumnos a2 = new Alumnos();
+		a2.nombre = "Juan";
+		
+		Alumnos a3 = new Alumnos();
+		a3.nombre = "Lola";
+		
+		Alumnos a4 = new Alumnos();
+		a4.nombre = "Susi";
+		
+		Alumnos a5 = new Alumnos();
+		a5.nombre = "Toño";
+		
 		//Crear objetos Materias
 		Materias ma1 = new Materias();
 		ma1.nombre = "Programación";
-		ma1.notas = 3;
+		ma1.notas = 1;
 		ma1.numCreditos = 2;
 		
 		Materias ma2 = new Materias();
@@ -40,9 +52,22 @@ public class Programa {
 		a1.m1 = ma1;
 		a1.m2 = ma2;
 		a1.m3 = ma3;
+		a2.m1 = ma1;
+		a2.m2 = ma2;
+		a2.m3 = ma3;
+		
 		
 		float promedioA1 = a1.calPromedio();
 		System.out.println("El promedio del estudiante es: " + promedioA1);
+		
+		System.out.println("Alumno: " + a1.nombre);
+		int matperdidasa1 = a1.calNotPerdida();
+		int matganadasa1 = a1.calNotGanada();
+		
+		System.out.println("Alumno: " + a2.nombre);
+		int matperdidasa2 = a2.calNotPerdida();
+		int matganadasa2 = a2.calNotGanada();
+			
 		
 	}
 
