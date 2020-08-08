@@ -65,9 +65,9 @@ public class Programa {
 		
 		Materias ma6 = new Materias();
 		ma6.nombre = "Circuitos";
-		ma6.notas = 1;
+		ma6.notas = 5;
 		ma6.numCreditos = 3;
-		ma6.valCreditos = 800;
+		ma6.valCreditos = 2800;
 		
 		//Relaciones entre objetos
 		a1.m1 = ma1;
@@ -76,10 +76,13 @@ public class Programa {
 		a2.m4 = ma4;
 		a2.m5 = ma5;
 		a2.m6 = ma6;
+		a3.m1 = ma1;
+		a3.m3 = ma3;
+		a3.m5 = ma5;
 		
 		
 		//Alumno 1
-		System.out.println("Alumno: " + a1.nombre);
+		System.out.println("Alumno 1: " + a1.nombre);
 		float promedioA1 = a1.calPromedioA1();
 		System.out.println("El promedio del alumno es: " + promedioA1);
 		
@@ -91,7 +94,7 @@ public class Programa {
 		
 		
 		//Alumno 2
-		System.out.println("Alumno: " +a2.nombre);
+		System.out.println("Alumno 2: " +a2.nombre);
 		
 		float promedioA2 = a2.calPromedioA2();
 		System.out.println("El promedio del alumno es: " + promedioA2);
@@ -101,6 +104,21 @@ public class Programa {
 		
 		float dineroA2 = a2.calPerCreditos2();
 		System.out.println("Para repetir los creditos debe pagar: " +dineroA2);
-	}
+		
+				
+		//Alumno 3
+		System.out.println("Alumno 3: " +a3.nombre);
+		
+		float promedioA3 = a3.calPromedioA3();
+		System.out.println("El promedio del alumno es: " + promedioA3);
+		
+		int matperdidasa3 = a3.calNotPerdidasa3();
+		int matganadasa3 = a3.calMatGanadas3();
+		
+		float dineroA3 = a3.calPerCreditos3();
+		System.out.println("Para repetir los creditos debe pagar: " +dineroA3);
+		
+		
+		}
 
 }
