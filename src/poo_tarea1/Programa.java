@@ -16,7 +16,7 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		//Creas objetos Alumnos
+		//Objetos Alumnos
 		Alumnos a1 = new Alumnos();
 		a1.nombre = "Lucia";
 		
@@ -32,7 +32,7 @@ public class Programa {
 		Alumnos a5 = new Alumnos();
 		a5.nombre = "Toño";
 		
-		//Crear objetos Materias Alumnos
+		//Objetos Materias Alumnos
 		Materias ma1 = new Materias();
 		ma1.nombre = "Programación";
 		ma1.notas = 1;
@@ -79,10 +79,17 @@ public class Programa {
 		a3.m1 = ma1;
 		a3.m3 = ma3;
 		a3.m5 = ma5;
+		a4.m2 = ma2;
+		a4.m4 = ma4;
+		a4.m6 = ma6;
+		a5.m2 = ma2;
+		a5.m5 = ma5;
+		a5.m1 = ma1;
 		
 		
 		//Alumno 1
 		System.out.println("Alumno 1: " + a1.nombre);
+		
 		float promedioA1 = a1.calPromedioA1();
 		System.out.println("El promedio del alumno es: " + promedioA1);
 		
@@ -119,6 +126,27 @@ public class Programa {
 		System.out.println("Para repetir los creditos debe pagar: " +dineroA3);
 		
 		
+		//Alumno 4
+		System.out.println("Alumnos 4: " +a4.nombre);
+		
+		float promedioA4 = a4.calPromedioA4();
+		System.out.println("El promedio del alumno es: " +promedioA4);
+		
+		int matperdidasa4 = a4.calNotPerdidasa4();
+		int matganadasa4 = a4.calMatGanadas4();
+		
+		float dineroA4 = a4.calPerCreditos4();
+		System.out.println("Para repetir los creditos debe pagar: " +dineroA4);
+				
+		//Alumno 5
+		System.out.println("Alumno 5: " +a5.nombre);
+		
+		int matperdidasa5 = a5.calNotPerdidasa5();
+		int matganadasa5 = a5.calMatGanadas5();
+		
+		float dineroA5 = a5.calNotPerdidasa5();
+		System.out.println("Para repetir los creditos debe pagar: " +dineroA5);
+				
 		}
 
 }
