@@ -402,27 +402,27 @@ public class Alumnos {
 	//Alumno 5
 	int calPerCreditos5() {
 		int dinero = 0;
-		if ((m2.notas < 3) && (m5.notas < 3) && (m1.notas < 3)) {
+		if ((m1.notas < 3) && (m2.notas < 3) && (m5.notas < 3)) {
 			System.out.println("Perdio 3 creditos");
-			dinero = (int) ((m2.numCreditos * m2.valCreditos) + (m5.numCreditos * m5.valCreditos) + (m1.numCreditos * m1.valCreditos));
-		}else if((m2.notas < 3) && (m5.notas < 3) && (m1.notas >= 3)) {
+			dinero = (int) ((m1.numCreditos * m1.valCreditos) + (m2.numCreditos * m2.valCreditos) + (m5.numCreditos * m5.valCreditos));
+		}else if((m1.notas < 3) && (m2.notas < 3) && (m5.notas >= 3)) {
 			System.out.println("Perdio 2 creditos");
-			dinero = (int) ((m2.notas * m2.valCreditos) + (m5.numCreditos * m5.valCreditos));
-		}else if((m2.notas < 3) && (m5.notas >= 3) && (m1.notas < 3)) {
+			dinero = (int) ((m1.notas * m1.valCreditos) + (m2.numCreditos * m2.valCreditos));
+		}else if((m1.notas < 3) && (m2.notas >= 3) && (m5.notas < 3)) {
 			System.out.println("Perdio 2 creditos");
-			dinero = (int) ((m2.numCreditos * m2.valCreditos) + (m1.numCreditos * m1.valCreditos));
-		}else if((m2.notas >= 3) && (m5.notas < 3) && (m1.notas < 3) ) {
+			dinero = (int) ((m1.numCreditos * m1.valCreditos) + (m5.numCreditos * m5.valCreditos));
+		}else if((m1.notas >= 3) && (m2.notas < 3) && (m5.notas < 3) ) {
 			System.out.println("Perdio 2 creditos");
-			dinero = (int) ((m5.numCreditos * m5.valCreditos) + (m1.numCreditos * m1.valCreditos));
-		}else if((m2.notas < 3) && (m5.notas >= 3) && (m1.notas >= 3)) {
-			System.out.println("Perdio 1 creditos");
-			dinero = (int) ((m2.numCreditos * m2.valCreditos));
-		}else if((m2.notas >= 3) && (m5.notas < 3) && (m1.notas >= 3)) {
-			System.out.println("Perdio 1 creditos");
-			dinero = (int) ((m5.numCreditos * m5.valCreditos));
-		}else if((m2.notas >= 3) && (m5.notas >= 3) && (m1.notas < 3)) {
+			dinero = (int) ((m2.numCreditos * m2.valCreditos) + (m5.numCreditos * m5.valCreditos));
+		}else if((m1.notas < 3) && (m2.notas >= 3) && (m5.notas >= 3)) {
 			System.out.println("Perdio 1 creditos");
 			dinero = (int) ((m1.numCreditos * m1.valCreditos));
+		}else if((m1.notas >= 3) && (m2.notas < 3) && (m5.notas >= 3)) {
+			System.out.println("Perdio 1 creditos");
+			dinero = (int) ((m2.numCreditos * m2.valCreditos));
+		}else if((m1.notas >= 3) && (m2.notas >= 3) && (m5.notas < 3)) {
+			System.out.println("Perdio 1 creditos");
+			dinero = (int) ((m5.numCreditos * m5.valCreditos));
 		}
 		return dinero;
 	}
