@@ -1,0 +1,72 @@
+
+ * ENTREGAR: 9 AGOSTO
+ * Realizar un programa que realice unos calculos con las notas de unas
+ * asignaturas pertenecientes a un estudiante. Cálculos:
+ * 1. Promedio del semestre. OK
+ * 2. Cuántas notas/asignaturas perdió. OK
+ * 3. Cuántas asignaturas ganó. OK
+ * 4. Cada asignatura tiene un número de créditos, indicar cuántos créditos perdió y 
+      cuánto dinero debe pagar para repetir los créditos/asignatura. OK 
+ * 5. Crear al menos 5 estudiantes con diferentes valores. OK
+ * 6. Crear el proyecto en GitHub. OK
+  
+ * ENTREGAR 13 AGOSTO
+ * 7. Cambiar el proyecto para que funcione con arreglos. OK
+ * 8. No permitir asignaturas repetidas. OK
+ 
+ * ENTREGAR 19 AGOSTO
+ * 9. Implementar método "addAsignatura", dentro de este método se deben validar las
+ * 	  siguientes reglas:
+ * 		a. 	No permitir asignaturas repetidas.
+ *  	b. 	Cada estudiante tiene un número máximo de créditos y cada asignatura
+ *     		también tiene un número máximo de créditos. Si el estudiante no tiene 
+ *  		suficientes créditos para agregar la asignatura, el sistema debe indicarle
+ *  		un error. 
+ *  			EJ: Un estudiante tiene 8 créditos
+ *  				Agrega la asignatura X1 = 3 créditos. Se agrega bien 
+ *  				Agrega la asignatura X2 = 4 créditos. Se agrega bien
+ *  				Agrega la asignatura X3 = 3 créditos. Sale error "No tiene créditos suficientes"
+ *  
+ *  Próxima clase:
+ *  	a.	Si sale algún error que no se termine el programa pero que muestre el error
+ *  		y que los objetos que hay en memoria, no se borren.
+ *  	b.	Terminar programa bajo cierto tipo de error 
+ *
+ 
+ 
+ 
+ a2.AddMaterias(ma6);
+		a2.AddMaterias(ma7);
+		a2.AddMaterias(ma8);
+		a2.AddMaterias(ma9);
+		a2.AddMaterias(ma10);
+ 
+ a3.AddMaterias(ma11);
+		a3.AddMaterias(ma12);
+		a3.AddMaterias(ma13);
+		a3.AddMaterias(ma14);
+		a3.AddMaterias(ma15);
+ 
+ 
+a4.AddMaterias(ma16);
+		a4.AddMaterias(ma17);
+		a4.AddMaterias(ma18);
+		a4.AddMaterias(ma19);
+		a4.AddMaterias(ma20);
+
+a5.AddMaterias(ma21);
+		a5.AddMaterias(ma22);
+		a5.AddMaterias(ma23);
+		a5.AddMaterias(ma24);
+		a5.AddMaterias(ma25);
+
+
+public void AddMaterias(Materias a) throws Exception {
+		if(cantMaterias == MAX_MATERIAS) {
+			throw new Exception("El alumno ya inscribio la cantidad maxima de materias");
+		}
+		
+		materias[cantMaterias] = a;
+		cantMaterias++;
+	}
+ 
