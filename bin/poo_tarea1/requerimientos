@@ -16,57 +16,43 @@
  
  * ENTREGAR 19 AGOSTO
  * 9. Implementar método "addAsignatura", dentro de este método se deben validar las
- * 	  siguientes reglas:
+  	  siguientes reglas:
  * 		a. 	No permitir asignaturas repetidas.
  *  	b. 	Cada estudiante tiene un número máximo de créditos y cada asignatura
- *     		también tiene un número máximo de créditos. Si el estudiante no tiene 
- *  		suficientes créditos para agregar la asignatura, el sistema debe indicarle
- *  		un error. 
+      		también tiene un número máximo de créditos. Si el estudiante no tiene 
+  			suficientes créditos para agregar la asignatura, el sistema debe indicarle
+ 	  		un error. 
  *  			EJ: Un estudiante tiene 8 créditos
- *  				Agrega la asignatura X1 = 3 créditos. Se agrega bien 
- *  				Agrega la asignatura X2 = 4 créditos. Se agrega bien
- *  				Agrega la asignatura X3 = 3 créditos. Sale error "No tiene créditos suficientes"
- *  
+ 					Agrega la asignatura X1 = 3 créditos. Se agrega bien 
+ 					Agrega la asignatura X2 = 4 créditos. Se agrega bien
+ 	  				Agrega la asignatura X3 = 3 créditos. Sale error "No tiene créditos suficientes"
+   
  *  Próxima clase:
  *  	a.	Si sale algún error que no se termine el programa pero que muestre el error
- *  		y que los objetos que hay en memoria, no se borren.
+ 	 		y que los objetos que hay en memoria, no se borren.
  *  	b.	Terminar programa bajo cierto tipo de error 
+ 
+ * ENTREGAR 30 AGOSTO
+ * 10. Resolver el problema del tamaño de arreglo. Se debe multiplicar el tamaño del arreglo de asignaturas, 
+ 		cuando se haya llegado al limite del mismo.
+ 		Ejm: 	
+ 			asignaturas = [{a (0)}, {a (1)} ... {a (n-1)}]		
+			Tamaño máximo = n = MAX_ASIGNATURAS
+			asignaturas.length = n
+			cantAsignaturas = n
+			
+		Problema: Se debe permitir que el estudiante agregue un número ilimitado de asignaturas. 
+			No se pueden agregar nuevas asignaturas por que el arreglo ya está lleno
+		
+		Solución: Duplicar el tamaño del arreglo
+		
+					Pasos
+						Crear otro arreglo nuevo arr2 = [{a (0)}, {a (1)} ... {a (2n-1)}]
+						Pasar todos los elementos del arr (Arreglo original) al arreglo arr1 que tiene el doble del tamaño del arreglo original. De esta manera, se pueden agregar más asignaturas.
+						
+
+ 			
  *
  
  
- 
- a2.AddMaterias(ma6);
-		a2.AddMaterias(ma7);
-		a2.AddMaterias(ma8);
-		a2.AddMaterias(ma9);
-		a2.AddMaterias(ma10);
- 
- a3.AddMaterias(ma11);
-		a3.AddMaterias(ma12);
-		a3.AddMaterias(ma13);
-		a3.AddMaterias(ma14);
-		a3.AddMaterias(ma15);
- 
- 
-a4.AddMaterias(ma16);
-		a4.AddMaterias(ma17);
-		a4.AddMaterias(ma18);
-		a4.AddMaterias(ma19);
-		a4.AddMaterias(ma20);
-
-a5.AddMaterias(ma21);
-		a5.AddMaterias(ma22);
-		a5.AddMaterias(ma23);
-		a5.AddMaterias(ma24);
-		a5.AddMaterias(ma25);
-
-
-public void AddMaterias(Materias a) throws Exception {
-		if(cantMaterias == MAX_MATERIAS) {
-			throw new Exception("El alumno ya inscribio la cantidad maxima de materias");
-		}
-		
-		materias[cantMaterias] = a;
-		cantMaterias++;
-	}
  

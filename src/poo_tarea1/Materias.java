@@ -6,7 +6,7 @@ public class Materias {
 	//Atributos
 	String nombre;
 	float notas;
-	int creditos;
+	int numCreditos;
 	float valCreditos;
 	
 	
