@@ -1,5 +1,5 @@
 
- * ENTREGAR: 9 AGOSTO
+ * ENTREGAR: 9 AGOSTO OK
  * Realizar un programa que realice unos calculos con las notas de unas
  * asignaturas pertenecientes a un estudiante. Cálculos:
  * 1. Promedio del semestre. OK
@@ -10,11 +10,11 @@
  * 5. Crear al menos 5 estudiantes con diferentes valores. OK
  * 6. Crear el proyecto en GitHub. OK
   
- * ENTREGAR 13 AGOSTO
+ * ENTREGAR 13 AGOSTO OK
  * 7. Cambiar el proyecto para que funcione con arreglos. OK
  * 8. No permitir asignaturas repetidas. OK
  
- * ENTREGAR 19 AGOSTO
+ * ENTREGAR 19 AGOSTO OK
  * 9. Implementar método "addAsignatura", dentro de este método se deben validar las
   	  siguientes reglas:
  * 		a. 	No permitir asignaturas repetidas.
@@ -32,9 +32,9 @@
  	 		y que los objetos que hay en memoria, no se borren.
  *  	b.	Terminar programa bajo cierto tipo de error 
  
- * ENTREGAR 30 AGOSTO
+ * ENTREGAR 30 AGOSTO OK
  * 10. Resolver el problema del tamaño de arreglo. Se debe multiplicar el tamaño del arreglo de asignaturas, 
- 		cuando se haya llegado al limite del mismo.
+ 		cuando se haya llegado al limite del mismo. 
  		Ejm: 	
  			asignaturas = [{a (0)}, {a (1)} ... {a (n-1)}]		
 			Tamaño máximo = n = MAX_ASIGNATURAS
@@ -52,7 +52,25 @@
 						
 
  			
- *
- 
- 
+ * ENTREGAR 2 SEPTIEMBRE
+ * 1. Realizar el método llamado insertInPosition (int valor, int p), p es la posición donde se quiere insertar el nuevo nodo. El índice inicial comienza en cero (0)
+
+		Ej 1:
+			lista = {3, 4, 6, 8, 41}
+			insertInPosition (7, 2)		
+			Resultado
+				lista = {3, 4, 7, 8, 41}
+		Ej 2:
+			lista = {98, 35}
+			insertInPosition (50, 0)
+			Resultado
+				lista = {50, 98, 35}
+		Ej 3:
+			lista = {3, 5, 4}
+			insertInPosition (1, 5)
+			Resultado
+				Mensaje de error: "No se puede insertar el elemento 1 en la posición 5"
+	 
+
+	 
  
