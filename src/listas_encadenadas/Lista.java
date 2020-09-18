@@ -49,17 +49,16 @@ public class Lista {
 					nuevo.setNext(next);
 				}
 			}
-						
 			tamaño++;
 		}
 	}
 	
 	//Buscar un nodo
-	public boolean buscar(int value) {
+	public boolean buscar(int p) {
 		Nodo tmp = head;
 		boolean encontrar = false;
 		while(tmp != null && encontrar != true) {
-			if(value == tmp.getValor()) {
+			if(p == tmp.getValor()) {
 				encontrar = true;
 				System.out.println("El elemento: " +tmp.dato+ " fue encontrado");
 			}

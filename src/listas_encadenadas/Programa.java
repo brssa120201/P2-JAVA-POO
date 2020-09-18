@@ -30,7 +30,7 @@ public class Programa {
 		System.out.println("Buscar un elemento: ");
 		lista.buscar(1);
 		lista.buscar(3);
-		lista.buscar(7);
+		lista.buscar(2);
 		System.out.println("-------------");
 		
 		System.out.println("Eliminar un nodo: ");
