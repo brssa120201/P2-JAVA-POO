@@ -37,7 +37,6 @@ public class Lista {
 					Nodo tmp = head;
 					while(tmp.getNext() == null) {
 						tmp = null;
-						System.out.println("No se puede insertar un nodo en esta posicion");	
 					}
 				}
 				else {
@@ -53,6 +52,55 @@ public class Lista {
 						
 			tamaño++;
 		}
+	}
+	
+	//Buscar un nodo
+	public boolean buscar(int value) {
+		Nodo tmp = head;
+		boolean encontrar = false;
+		while(tmp != null && encontrar != true) {
+			if(value == tmp.getValor()) {
+				encontrar = true;
+				System.out.println("El elemento: " +tmp.dato+ " fue encontrado");
+			}
+			else {
+				tmp = tmp.getNext();
+			}
+		}
+		return encontrar;
+		
+	}
+	
+	//Eliminar un nodo 
+	public void eliminar(int p) {
+		if(p >= 0 && p < tamaño) {
+			if(p == 0) {
+				head = head.getNext();
+			}else {
+				Nodo tmp = head;
+				for(int i = 0; i < (p-1); i++) {
+					tmp = tmp.getNext();
+				}
+				Nodo next = tmp.getNext();
+				tmp.setNext(next.getNext());
+			}
+			tamaño--;
+		}
+	}
+	
+	//Cantidad números pares en la lista
+	public int numerosPares() {
+		Nodo tmp = head;
+		int contador = 0;
+		while(tmp != null) {
+			if((tmp.dato % 2) == 0) {
+				contador = tmp.dato;
+				System.out.println("Los números pares que hay en la lista son: " +contador);	
+			}
+			tmp = tmp.next;
+		}
+		return contador++;
+		
 	}
 	
 	//Imprime la lista

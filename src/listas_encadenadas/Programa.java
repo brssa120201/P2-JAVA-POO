@@ -5,13 +5,12 @@ public class Programa {
 	public static void main(String[] args) {
 		
 		Lista lista = new Lista();
-		
 		System.out.println("Lista inicial: ");
+		
 		lista.insertar(4);
 		lista.insertar(3);
 		lista.insertar(2);
 		lista.insertar(1);
-		
 		lista.listar();
 		System.out.println("-------------");
 		
@@ -23,10 +22,26 @@ public class Programa {
 		lista.listar();
 		System.out.println("-------------");
 		
-		lista.insertarPorPosicion(6, 10);
+		lista.insertarPorPosicion(8, 10);
 		lista.listar();
-		System.out.println("No se puede insertar en esta posicion");
 		System.out.println("-------------");
+		
+		
+		System.out.println("Buscar un elemento: ");
+		lista.buscar(1);
+		lista.buscar(3);
+		lista.buscar(7);
+		System.out.println("-------------");
+		
+		System.out.println("Eliminar un nodo: ");
+		lista.eliminar(2);
+		lista.eliminar(5);
+		lista.listar();
+		System.out.println("-------------");
+		
+		System.out.println("Números pares:");
+		lista.numerosPares();
+		
 		
 		}
 
