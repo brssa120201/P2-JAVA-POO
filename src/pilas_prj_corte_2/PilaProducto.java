@@ -1,5 +1,7 @@
 package pilas_prj_corte_2;
 
+import listas_encadenadas.Nodo;
+
 public class PilaProducto {
 
 	NodoProducto top;
@@ -136,8 +138,6 @@ public class PilaProducto {
 		}
 		return pilaDiferencia.imprimirDiferencia();
 	}
-	
-	
 	
 	public void imprimir() {
 		NodoProducto tmp = top;

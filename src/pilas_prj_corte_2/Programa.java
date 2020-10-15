@@ -51,16 +51,15 @@ public class Programa {
 		producto1.push(p1);
 		producto1.push(p2);
 		producto1.push(p3);
-		System.out.println("Productos 1: ");
+		System.out.println("\n Productos 1: ");
 		producto1.imprimir();
-		System.out.println();
-		
+				
 		producto2.push(p6);
 		producto2.push(p4);
 		producto2.push(p5);
 		producto2.push(p2);
-		System.out.println("Productos 2: ");
-		producto2.imprimir();
+		System.out.println("\n Productos 2: ");
+		
 		
 		//Union:
 		System.out.println("\n Union Pilas");

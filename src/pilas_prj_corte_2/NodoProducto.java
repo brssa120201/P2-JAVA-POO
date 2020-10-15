@@ -25,4 +25,5 @@ public class NodoProducto {
 	public void setNext(NodoProducto next) {
 		this.next = next;
 	}
+
 }
